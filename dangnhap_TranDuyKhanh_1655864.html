@@ -1,0 +1,96 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <title>Trang đăng nhập</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <style>
+        div{
+            padding: 10px;
+        }
+        input{
+            padding: 5px;
+        }
+        span{
+            width: 50px;;
+        }
+        
+        ::placeholder{
+            background-color:yellow;
+        }
+    
+
+    </style>
+    <body>
+        <div class="body">
+        <form method="dialog" name="f">    
+            <h1>
+                Trang đăng nhập
+            </h1>
+            <br>
+
+            <table style="text-align: left;">
+                <tr>
+                    <th>Tên đăng nhập</th>
+                    <th><input type="text" name="txtHoten_16558" minlength="5" maxlength="25" onfocus="doimaunen(this,'yellow')" onmousedown="doimaunen(this,'yellow')" onkeyup="doimaunen(this,'white')"></th>
+                </tr>
+                <tr>
+                    <th>Mật khẩu</th>
+                    <th><input type="password" name="txtMatkhau_16558" onfocus="doimaunen(this,'yellow')" onmousedown="doimaunen(this,'yellow')" onkeyup="doimaunen(this,'white')"></th>
+                </tr>
+            </table>
+            <p style="text-align: left; padding-left: 20px;">
+                <input type="submit" name="Sub" value="Đăng nhập" onclick="return check()">
+                <input type="reset" name="reset" value="Huỷ" onclick="return reset()">
+            </p>
+        </div>
+        </form>
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    <script language="javascript">
+        function reset(){
+            document.f.reset();
+        }
+
+        function check(){
+            if(document.f.txtHoten_16558.value == ""){
+                alert("Mời bạn nhập tên đăng nhập.");
+                document.f.txtHoten_16558.focus();
+                return false;
+            }
+            if(document.f.txtMatkhau_16558.value == ""){
+                alert("Mời bạn nhập mật khẩu.");
+                document.f.txtMatkhau_16558.focus();
+                return false;
+            }
+            if(document.f.txtHoten_16558.value.length < 5 || document.f.txtHoten_16558.value.length > 25){
+                alert("Tên đăng nhập nằm trong khoảng 5-25 kí tự. Mời bạn nhập lại.");
+                document.f.txtHoten_16558.focus();
+                return false;
+            }
+            if(document.f.txtHoten_16558.value = "khanhtd16558" && document.f.txtMatkhau_16558.value=="16558"){
+                return true;
+            }
+
+            
+
+            
+        }
+        function doimaunen(t,mau){
+        t.style.backgroundColor=mau;
+        
+    }
+
+    </script>
+    </html>

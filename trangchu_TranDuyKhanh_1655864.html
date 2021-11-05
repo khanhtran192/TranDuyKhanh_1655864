@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Trang chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+      *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .banner_16558{
+            width: 1089px;
+            height: 274px;
+            background-image: url("Banner.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0px auto;
+        }
+        .leftmenu_16558{
+            width: 217.8px;
+            height: 702px;
+            background-image: url("LeftMenu.png");
+            margin: 0px;
+        }
+        .content_16558{
+            width: 653px;
+            height: 702px;
+            margin: 0px;
+        }
+        .rightmenu_16558{
+            width: 217.8px;
+            height: 702px;
+            background-image: url("RightMenu.png");
+            margin: 0px;
+        }
+        .body_16558{
+            width: 1089px;
+            display: flex;
+            margin: 0px auto;
+            text-align: center;
+        }
+        table thead tr{
+            color: lime;
+        }
+        
+        table tr::nth-child(even){
+            color: orange;
+        }
+        table th,td{
+            border: 1px solid black;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 0px auto;
+            width: 620px;
+        }
+        
+        .repair_16558{
+            width: 100%;
+        }
+  </style>
+  <body>
+    <div class="banner_16558">
+
+    </div>
+    <div class="body_16558">
+        <div class="leftmenu_16558">
+
+        </div>
+        <div class="content_16558">
+            <p>THÔNG TIN NHÂN VIÊN</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>MSNV</th>
+                        <th>Họ và tên</th>
+                        <th>Ngày sinh</th>
+                        <th>Giới tính</th>
+                        <th>Địa chỉ</th>
+                        <th>Sửa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>frf</td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td><button class="repair_16558">Sửa</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rightmenu_16558">
+    
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.js"></script>
+  </body>
+  <script language="javascript">
+      $(".repair_16558").click(function(){
+            var result = confirm("Bạn có muốn sửa không?");
+                if(result)  {
+                    alert("Đã sửa");
+                } else {
+                    alert("Không sửa");
+                }
+        });
+  </script>
+</html>
